@@ -1,0 +1,71 @@
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    padding-top: 6.8rem;
+    padding-left: 7.7rem;
+    position: absolute;
+    z-index: 10;
+    @include tab {
+        position: relative;
+        height: 7rem;
+        padding: 2.4rem 5%;
+        justify-content: space-between;
+    }
+}
+
+.hd-logo {
+    white-space: nowrap;
+    font-family: $en-catch;
+    font-size: 3.8rem;
+    line-height: 1em;
+    @include tab {
+        font-size: 2.2rem;;
+    }
+}
+
+.hd-menu {
+    font-size: 2rem;
+    ul {
+        display: flex;
+        justify-content: left;
+    }
+    li {
+        margin-left: 2rem;
+        color: $gray;
+        &:hover {
+            color: black;
+            border-bottom: 1px solid black;
+        }
+    }
+}
+
+nav {
+    @include tab {
+        display: none;
+    }
+}
+
+.ham {
+    display: none;
+    @include tab {
+        height: 1.4rem;
+        width: 4%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        span {
+            display: inline-block;
+            height: 2px;
+            width: 100%;
+            background-color: #3B4043;
+            &:nth-child(3) {
+                width: 60%;
+            }
+        }
+    }
+}
+
+
+

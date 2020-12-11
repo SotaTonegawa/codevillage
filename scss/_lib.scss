@@ -1,0 +1,64 @@
+//変数
+$en-catch: "Roboto Mono for Powerline";
+$ja-catch: "ヒラギノ明朝 Pro";
+$ja-text: "ヒラギノ角ゴ Pro";
+$gray: #707070;
+$off-white: #A193861F;
+
+// mixin
+@mixin pc {
+    @media screen and (min-width: 960px){
+        @content;
+    } 
+}
+@mixin tab {
+    @media screen and (max-width: 959px){
+        @content;
+    }
+}
+@mixin sp {
+    @media screen and (max-width: 600px){
+        @content;
+    }
+}
+
+//共通
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    line-height: 1.67rem;
+}
+
+.wrap {
+    width: 84%;
+    margin: 0 auto; 
+    padding-bottom: 7rem;
+}
+
+.title {
+    display: felx;
+    justify-content: left;
+    align-items: center;
+    font-size: 2.4rem;
+    font-family: $en-catch;
+    color: $gray;
+    padding-top: 261px;
+    margin-bottom: 1.1rem;
+    margin-left: 8%;
+    &:after {
+        display: inline-block;
+        content: "";
+        transform: translateY(-0.7rem);
+        border: 1px solid $gray;
+        width: 10rem;
+        margin-left: 2.2rem;
+    }
+    @include tab {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+}
+

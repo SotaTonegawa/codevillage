@@ -1,0 +1,697 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.67rem;
+}
+
+.wrap {
+  width: 84%;
+  margin: 0 auto;
+  padding-bottom: 7rem;
+}
+
+.title {
+  display: felx;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.4rem;
+  font-family: "Roboto Mono for Powerline";
+  color: #707070;
+  padding-top: 261px;
+  margin-bottom: 1.1rem;
+  margin-left: 8%;
+}
+
+.title:after {
+  display: inline-block;
+  content: "";
+  -webkit-transform: translateY(-0.7rem);
+          transform: translateY(-0.7rem);
+  border: 1px solid #707070;
+  width: 10rem;
+  margin-left: 2.2rem;
+}
+
+@media screen and (max-width: 959px) {
+  .title {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-top: 6.8rem;
+  padding-left: 7.7rem;
+  position: absolute;
+  z-index: 10;
+}
+
+@media screen and (max-width: 959px) {
+  header {
+    position: relative;
+    height: 7rem;
+    padding: 2.4rem 5%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.hd-logo {
+  white-space: nowrap;
+  font-family: "Roboto Mono for Powerline";
+  font-size: 3.8rem;
+  line-height: 1em;
+}
+
+@media screen and (max-width: 959px) {
+  .hd-logo {
+    font-size: 2.2rem;
+  }
+}
+
+.hd-menu {
+  font-size: 2rem;
+}
+
+.hd-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.hd-menu li {
+  margin-left: 2rem;
+  color: #707070;
+}
+
+.hd-menu li:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 959px) {
+  nav {
+    display: none;
+  }
+}
+
+.ham {
+  display: none;
+}
+
+@media screen and (max-width: 959px) {
+  .ham {
+    height: 1.4rem;
+    width: 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .ham span {
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background-color: #3B4043;
+  }
+  .ham span:nth-child(3) {
+    width: 60%;
+  }
+}
+
+#first-v {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catch {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 959px) {
+  .catch {
+    position: relative;
+  }
+}
+
+.catch__copy {
+  height: 100%;
+  width: 46%;
+  font-size: 3.8rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 959px) {
+  .catch__copy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    position: absolute;
+    width: 100%;
+    color: white;
+    z-index: 20;
+  }
+}
+
+.catch__copy__ja {
+  font-family: "ヒラギノ明朝 Pro";
+  line-height: 1em;
+  letter-spacing: 0.2rem;
+  margin-top: 291px;
+  margin-left: 27%;
+}
+
+@media screen and (max-width: 959px) {
+  .catch__copy__ja {
+    width: 84%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.3rem;
+    padding-bottom: 27.7rem;
+  }
+}
+
+.catch__copy__en {
+  font-family: Zapfino;
+  line-height: 4em;
+  margin-top: 48px;
+  margin-left: 17%;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 959px) {
+  .catch__copy__en {
+    width: 84%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+  }
+}
+
+.catch img {
+  left: 46%;
+  height: inherit;
+  width: 54%;
+  background-size: cover;
+  position: absolute;
+}
+
+@media screen and (max-width: 959px) {
+  .catch img {
+    width: 100%;
+    -webkit-transform: translate(-46%);
+            transform: translate(-46%);
+  }
+}
+
+#concept {
+  background: -webkit-gradient(linear, left top, left bottom, from(#A193861F), color-stop(42%, #A193861F), color-stop(42%, #A1938689), to(#A1938689));
+  background: linear-gradient(180deg, #A193861F 0%, #A193861F 42%, #A1938689 42%, #A1938689 100%);
+}
+
+.concept__img {
+  height: 413px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .concept__img {
+    height: 205px;
+  }
+}
+
+.concept__img__l {
+  height: 100%;
+  width: 63%;
+}
+
+@media screen and (max-width: 600px) {
+  .concept__img__l {
+    width: 49%;
+  }
+}
+
+.concept__img__r {
+  height: 100%;
+  width: 36%;
+}
+
+@media screen and (max-width: 600px) {
+  .concept__img__r {
+    width: 49%;
+  }
+}
+
+.concept-container {
+  width: 72%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  color: white;
+  padding-bottom: 7rem;
+}
+
+@media screen and (max-width: 959px) {
+  .concept-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .concept-container {
+    margin-top: 5rem;
+    margin-bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    white-space: wrap;
+  }
+}
+
+.concept-copy {
+  width: 48%;
+  font-size: 4rem;
+  font-family: "ヒラギノ明朝 Pro";
+  white-space: nowrap;
+  line-height: 14rem;
+  letter-spacing: 0.5rem;
+}
+
+@media screen and (max-width: 959px) {
+  .concept-copy {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .concept-copy {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.concept-text {
+  width: 44%;
+  font-size: 1.6rem;
+  font-family: "ヒラギノ角ゴ Pro";
+  -webkit-transform: translateY(3rem);
+          transform: translateY(3rem);
+  letter-spacing: 0.1rem;
+  min-width: 23.6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .concept-text {
+    width: 100%;
+  }
+}
+
+.menu-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 959px) {
+  .menu-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.menu__item {
+  width: 30%;
+  font-family: "Roboto Mono for Powerline";
+}
+
+@media screen and (max-width: 959px) {
+  .menu__item {
+    width: 84%;
+    margin: 0 auto;
+  }
+  .menu__item__img {
+    width: 100%;
+  }
+}
+
+.menu__item__heading {
+  font-size: 3rem;
+  margin-top: 3.4rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.menu__item__text {
+  font-size: 1.6rem;
+  margin-top: 3.4rem;
+  padding: 0 1rem 0 1rem;
+  letter-spacing: 1.6px;
+}
+
+.menu__item__price {
+  font-size: 1.6rem;
+  margin-top: 3.4rem;
+  text-align: right;
+}
+
+#access {
+  background-color: #A193861F;
+}
+
+.access-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 959px) {
+  .access-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.access-container {
+  height: 396px;
+  width: 40%;
+  padding-left: 8%;
+  background-color: #D0C5BA;
+}
+
+@media screen and (max-width: 959px) {
+  .access-container {
+    width: 100%;
+  }
+}
+
+.access-container__adress {
+  font-family: "Roboto Mono for Powerline";
+  font-size: 2.4rem;
+  margin-top: 10.7rem;
+  color: #00000038;
+}
+
+@media screen and (max-width: 959px) {
+  .access-container__adress {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.access-container__info {
+  font-family: "Roboto Mono for Powerline";
+  font-size: 1.6rem;
+  color: white;
+  line-height: 3;
+}
+
+.access-map {
+  height: 396px;
+  width: 60%;
+}
+
+@media screen and (max-width: 959px) {
+  .access-map {
+    width: 100%;
+  }
+}
+
+.access-map__google {
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  height: 342px;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    height: 261px;
+  }
+}
+
+.footer-line {
+  height: 171px;
+  width: 84%;
+  border-bottom: 1px solid #70707036;
+  margin: 0 8%;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-line {
+    height: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 84%;
+  margin: 0 auto;
+  padding-top: 77px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 201px;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+}
+
+.footer-wrap__sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-wrap__sns {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.footer-wrap__reserve {
+  font-family: "Roboto Mono for Powerline";
+  font-size: 1.8rem;
+  color: #707070;
+  letter-spacing: 0.5px;
+  height: 37px;
+  width: 184px;
+  line-height: 37px;
+  text-align: center;
+  border: 1px solid #707070;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-wrap__reserve {
+    margin: 0 auto;
+  }
+}
+
+.footer-wrap__sns__salon-name {
+  font-size: 3.2rem;
+  font-family: "Roboto Mono for Powerline";
+  color: #7070704D;
+  margin-right: 2.6rem;
+}
+
+#icon {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-right: 0.9rem;
+}
+/*# sourceMappingURL=main.css.map */

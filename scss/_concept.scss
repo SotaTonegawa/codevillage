@@ -1,0 +1,69 @@
+#concept {
+    background: linear-gradient(180deg, $off-white 0%, $off-white 42%, #A1938689 42%, #A1938689 100%);
+}
+
+.concept__img {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    &__l {
+        height: 100%;
+        width: 63%;
+        @include sp {
+            width: 49%;
+        }
+    }
+    &__r {
+        height: 100%;
+        width: 36%;
+        @include sp {
+            width: 49%;
+        }
+    }
+}
+
+.concept-container {
+    width: 72%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: white;
+    @include tab {
+        width: 80%;
+    }
+    @include sp {
+        margin-top: 5rem;
+        flex-direction: column;
+        white-space: wrap;
+    }
+}
+
+.concept-copy {
+    width: 48%;
+    font-size: 4rem;
+    font-family: $ja-catch;
+    white-space: nowrap;
+    line-height: 14rem;
+    letter-spacing: 0.5rem;
+    @include tab {
+        font-size: 2.6rem;
+    }
+    @include sp {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.concept-text {
+    width: 44%;
+    font-size: 1.6rem;
+    font-family: $ja-text;
+    transform: translateY(3rem);
+    letter-spacing: 0.1rem;
+    min-width: 23.6rem;
+    @include sp {
+        width: 100%;
+    }
+}

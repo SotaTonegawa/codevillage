@@ -1,0 +1,36 @@
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    @include tab {
+        flex-direction: column;
+    }
+}
+
+.menu__item {
+    width: 30%;
+    font-family: $en-catch;
+    @include  tab {
+        width: 84%;
+        margin: 0 auto;
+    &__img {
+        width: 100%;
+        }
+    }
+    &__heading {
+        font-size: 3rem;
+        margin-top: 3.4rem;
+        text-align: center;
+        line-height: 3rem;
+    }
+    &__text {
+        font-size: 1.6rem;
+        margin-top: 3.4rem;
+        padding: 0 1rem 0 1rem;
+        letter-spacing: 1.6px;
+    }
+    &__price {
+        font-size: 1.6rem;
+        margin-top: 3.4rem;
+        text-align: right;
+    }
+}
