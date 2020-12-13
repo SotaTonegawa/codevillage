@@ -159,6 +159,11 @@ body {
   }
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,7 +317,7 @@ header {
   font-family: "ヒラギノ明朝 Pro";
   line-height: 1em;
   letter-spacing: 0.2rem;
-  margin-top: 291px;
+  margin-top: 296px;
   margin-left: 27%;
 }
 
@@ -365,23 +370,16 @@ header {
 }
 
 .concept__img {
-  height: 413px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-@media screen and (max-width: 600px) {
-  .concept__img {
-    height: 205px;
-  }
+  padding: 0;
 }
 
 .concept__img__l {
-  height: 100%;
   width: 63%;
 }
 
@@ -392,7 +390,6 @@ header {
 }
 
 .concept__img__r {
-  height: 100%;
   width: 36%;
 }
 
@@ -400,6 +397,11 @@ header {
   .concept__img__r {
     width: 49%;
   }
+}
+
+.concept-img-a, .concept-img-b {
+  height: 100%;
+  width: 100%;
 }
 
 .concept-container {
@@ -412,7 +414,6 @@ header {
           justify-content: space-between;
   margin: 0 auto;
   color: white;
-  padding-bottom: 7rem;
 }
 
 @media screen and (max-width: 959px) {
@@ -424,7 +425,6 @@ header {
 @media screen and (max-width: 600px) {
   .concept-container {
     margin-top: 5rem;
-    margin-bottom: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -464,6 +464,7 @@ header {
   -webkit-transform: translateY(3rem);
           transform: translateY(3rem);
   letter-spacing: 0.1rem;
+  line-height: 3.6rem;
   min-width: 23.6rem;
 }
 
@@ -498,11 +499,12 @@ header {
 
 @media screen and (max-width: 959px) {
   .menu__item {
-    width: 84%;
-    margin: 0 auto;
+    width: 100%;
   }
   .menu__item__img {
     width: 100%;
+    -o-object-fit: full;
+       object-fit: full;
   }
 }
 
@@ -518,6 +520,7 @@ header {
   margin-top: 3.4rem;
   padding: 0 1rem 0 1rem;
   letter-spacing: 1.6px;
+  line-height: 3.2rem;
 }
 
 .menu__item__price {
@@ -687,6 +690,12 @@ footer {
   font-family: "Roboto Mono for Powerline";
   color: #7070704D;
   margin-right: 2.6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-wrap__sns__salon-name {
+    font-size: 1.8rem;
+  }
 }
 
 #icon {

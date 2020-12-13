@@ -7,18 +7,26 @@
     justify-content: space-between;
     padding: 0;
     &__l {
-        height: 100%;
         width: 63%;
         @include sp {
             width: 49%;
         }
     }
     &__r {
-        height: 100%;
         width: 36%;
         @include sp {
             width: 49%;
         }
+    }
+}
+
+.concept-img-a, .concept-img-b {
+    height: 100%;
+    width: 100%;
+}
+
+.concept-img-a {
+    @include sp {
     }
 }
 
@@ -62,6 +70,7 @@
     font-family: $ja-text;
     transform: translateY(3rem);
     letter-spacing: 0.1rem;
+    line-height: 3.6rem;
     min-width: 23.6rem;
     @include sp {
         width: 100%;

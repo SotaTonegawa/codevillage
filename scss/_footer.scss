@@ -27,7 +27,6 @@ footer {
         height: 201px;
         padding-top: 0;
         padding-bottom: 20px;
-
     }
     &__sns {
         display: flex;
@@ -57,6 +56,9 @@ footer {
     font-family: $en-catch;
     color: #7070704D;
     margin-right: 2.6rem;
+    @include sp {
+        font-size: 1.8rem;
+    }
 }
 
 #icon {

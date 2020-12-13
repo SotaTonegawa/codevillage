@@ -10,10 +10,11 @@
     width: 30%;
     font-family: $en-catch;
     @include  tab {
-        width: 84%;
-        margin: 0 auto;
+        width: 100%;
+        // margin: 0 auto;
     &__img {
         width: 100%;
+        object-fit: full;
         }
     }
     &__heading {
@@ -27,6 +28,7 @@
         margin-top: 3.4rem;
         padding: 0 1rem 0 1rem;
         letter-spacing: 1.6px;
+        line-height: 3.2rem;
     }
     &__price {
         font-size: 1.6rem;
