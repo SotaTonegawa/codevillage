@@ -529,6 +529,12 @@ header {
   text-align: right;
 }
 
+@media screen and (max-width: 959px) {
+  .cut, .perm {
+    margin-bottom: 50px;
+  }
+}
+
 #access {
   background-color: #A193861F;
 }

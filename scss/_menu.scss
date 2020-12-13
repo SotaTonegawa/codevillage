@@ -36,3 +36,9 @@
         text-align: right;
     }
 }
+
+.cut, .perm {
+    @include tab {
+    margin-bottom: 50px;
+    }
+}
