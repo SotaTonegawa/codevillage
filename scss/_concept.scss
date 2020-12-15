@@ -6,6 +6,9 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
+    @include sp {
+        height: 205px;
+    }
     &__l {
         width: 63%;
         @include sp {
@@ -27,6 +30,13 @@
 
 .concept-img-a {
     @include sp {
+        object-position: 90% 50%;
+    }
+}
+
+.concept-img-b {
+    @include sp {
+        object-position: 90% 50%;
     }
 }
 
@@ -40,9 +50,11 @@
         width: 80%;
     }
     @include sp {
+        width: 100%;
         margin-top: 5rem;
         flex-direction: column;
         white-space: wrap;
+        margin: 0;
     }
 }
 
@@ -61,7 +73,9 @@
         font-size: 1.8rem;
         line-height: 1.8rem;
         text-align: center;
-        margin: 0 auto;
+        // margin: 0 auto;
+        width: 100%;
+        text-align: center;
     }
 }
 

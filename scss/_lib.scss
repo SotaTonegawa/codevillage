@@ -36,6 +36,9 @@ body {
     width: 84%;
     margin: 0 auto; 
     padding-bottom: 7rem;
+    @include sp {
+        width: 89%;
+    }
 }
 
 .title {
